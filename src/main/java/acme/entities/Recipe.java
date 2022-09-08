@@ -12,6 +12,7 @@ import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
 import acme.framework.entities.AbstractEntity;
+import acme.roles.Chef;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -25,8 +26,6 @@ public class Recipe extends AbstractEntity {
 		protected static final long	serialVersionUID	= 1L;
 
 		// Attributes -------------------------------------------------------------
-
-		protected boolean published;
 
 		@Column(unique = true)
 		@Pattern(regexp = "^([A-Z]{2}:)?[A-Z]{3}-[0-9]{3}$") 
@@ -51,8 +50,8 @@ public class Recipe extends AbstractEntity {
 
 		// Relationships ----------------------------------------------------------
 
-//		@NotNull
-//		@Valid
-//		@ManyToOne(optional = false)
-//		protected Chef chef;
+		@NotNull
+		@Valid
+		@ManyToOne(optional = false)
+		protected Chef chef;
 }

@@ -1,4 +1,4 @@
-key,heading,instantiationMoment,text,link,flag
+key,heading,creation-moment,piece-text,link,flag
 bulletin-01,Title1,2022/08/26 10:00,They are everywhere!,https://www.bulletin.com,true
 bulletin-02,Title2,2021/01/01 10:00,Beware of white shadows!,https://www.bulletin.com,false
 bulletin-03,Title3,2022/08/14 01:00,Sopa,https://www.culebras.com,true
